@@ -5,3 +5,15 @@ app = "flu-io-testing"
 
 [env]
   # No secrets here, secrets managed via flyctl secrets set or dashboard
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
