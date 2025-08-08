@@ -4,7 +4,7 @@ app = "flu-io-testing"
   dockerfile = "Dockerfile"
 
 [env]
-  # No secrets here, secrets managed via flyctl secrets set or dashboard
+  # secrets managed via flyctl secrets set or dashboard
 
 [[services]]
   internal_port = 8080
