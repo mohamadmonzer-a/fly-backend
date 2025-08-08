@@ -3,3 +3,9 @@ uvicorn
 PyMuPDF
 openai
 supabase
+
+
+
+
+PyPDF2
+python-dotenv
